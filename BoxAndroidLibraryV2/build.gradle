@@ -27,8 +27,8 @@ configurations {
 
 dependencies {
 	archives "org.apache.maven.wagon:wagon-ssh:2.2"
-	compile "com.android.support:support-v4:19.0.1"
-	compile "com.box:box-java-sdk:3.0.9-SNAPSHOT"
+	compile "com.android.support:support-v4:+"
+	compile 'net.box:boxjavalibv2:+'
 	compile "com.fasterxml.jackson.core:jackson-annotations:2.2.2"
 	compile "com.fasterxml.jackson.core:jackson-core:2.2.2"
 	compile "com.fasterxml.jackson.core:jackson-databind:2.2.2"
@@ -42,7 +42,7 @@ dependencies {
 
 android {
 	compileSdkVersion 19
-	buildToolsVersion "19.1.0"
+    buildToolsVersion '20.0.0'
 
 	defaultConfig {
 		minSdkVersion 8
